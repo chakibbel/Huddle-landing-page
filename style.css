@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 6vh;
 }
 .illustration-img {
     width: 45vw;
@@ -40,8 +40,25 @@ body {
     height: 60vh;
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;    
+    font-weight: 400; 
+    padding-top: 2.5%;
 }
 h1 {font-weight: 700;
     font-size: 240%;
+}
+.button {
+    display: block;
+    border: none;
+    width: 30%;
+    height: 20%;
+    padding: 2.5% 0;
+    background-color: white;
+    color: var(--violet);
+    font-size: 120%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: var(--soft-magenta);
+    color: white;
 }
