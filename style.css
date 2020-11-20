@@ -19,16 +19,19 @@ body {
     width: 13vw;
     height: 10vh;
     margin-top: 4vh;
+    position: relative;
+    left: 7%;
 }
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 5vh;
 }
 .illustration-img {
     width: 45vw;
     height: 60vh;
+    margin-right: 30px;
 }
 #image {
     width: 100%;
@@ -43,7 +46,7 @@ body {
     padding-top: 2.5%;
 }
 h1 {font-weight: 700;
-    font-size: 240%;
+    font-size: 250%;
 }
 .button {
     display: block;
@@ -55,17 +58,18 @@ h1 {font-weight: 700;
     color: var(--violet);
     font-size: 120%;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 .button:hover {
     background-color: var(--soft-magenta);
     color: white;
 }
 .icons {
+    width: 20vw;
     font-size: 20px;
     color: white;
     position: relative;
-    left: 80%;
+    left: 78%;
 }
 .icon-style {
     border: 1px solid white;
@@ -76,4 +80,26 @@ h1 {font-weight: 700;
 .icon-style:hover {
     color: var(--soft-magenta);
     border: 1px solid var(--soft-magenta);
+}
+@media only screen and (max-width: 800px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    .logo {
+        width: 30vw;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .illustration-img {
+        width: 80vw;
+        height: 50vh;
+    }
+    .illustration-txt {
+        text-align: center;
+        width: 80vw;
+    }
+    h1 {font-size: 200%;}
 }
